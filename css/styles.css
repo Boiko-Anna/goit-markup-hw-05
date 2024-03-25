@@ -612,8 +612,11 @@ background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover,
-.modal-close:focus {
+.modal-button:hover + .modal-close {
+    fill: #ffffff;  
+}
+
+.modal-button:focus + .modal-close {
     fill: #ffffff;
 }
 
@@ -674,6 +677,9 @@ margin-bottom: 4px;
 .modal-box-icon {
     position: relative;
     
+}
+.modal-textarea-box {
+    margin-bottom: 16px;
 }
 .modal-comments {
     font-size: 12px;
@@ -762,7 +768,7 @@ background: #4d5ae5;
 border: none;
 display: block;
 margin: 0 auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer
 }
 
